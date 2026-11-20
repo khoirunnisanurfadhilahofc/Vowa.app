@@ -1,0 +1,6 @@
+{
+  "name": "VOWA — Your Voice, Your Safety",
+  "description": "Platform digital ruang aman bagi penumpang ride-hailing untuk melaporkan pelecehan, memperoleh bantuan darurat, dan panduan perlindungan diri.",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

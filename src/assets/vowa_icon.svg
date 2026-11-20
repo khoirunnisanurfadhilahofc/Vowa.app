@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient for Squircle -->
+    <linearGradient id="vowaBgGrad" x1="0.2" y1="0" x2="0.8" y2="1">
+      <stop offset="0%" stop-color="#9333EA" />
+      <stop offset="45%" stop-color="#7928CA" />
+      <stop offset="100%" stop-color="#4C1D95" />
+    </linearGradient>
+
+    <!-- Wing Front Gradient -->
+    <linearGradient id="vowaWingGrad" x1="0" y1="0" x2="0.5" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="60%" stop-color="#EDE9FE" />
+      <stop offset="100%" stop-color="#DDD6FE" />
+    </linearGradient>
+
+    <!-- Wing Right Layer Gradient -->
+    <linearGradient id="vowaWingRightGrad" x1="0.5" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F5F3FF" />
+      <stop offset="70%" stop-color="#DDD6FE" />
+      <stop offset="100%" stop-color="#C4B5FD" />
+    </linearGradient>
+
+    <!-- Soft Drop Shadow -->
+    <filter id="vowaShadow" x="-10%" y="-10%" width="125%" height="125%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#2E1065" flood-opacity="0.35" />
+    </filter>
+  </defs>
+
+  <!-- Squircle Background -->
+  <rect width="400" height="400" rx="96" fill="url(#vowaBgGrad)" />
+
+  <!-- Inner Soft Glow Highlight -->
+  <rect x="6" y="6" width="388" height="388" rx="90" fill="none" stroke="#FFFFFF" stroke-opacity="0.2" stroke-width="3" />
+
+  <!-- Protected Human Figure (Head & Torso) -->
+  <g filter="url(#vowaShadow)">
+    <!-- Head -->
+    <circle cx="200" cy="132" r="32" fill="#FFFFFF" />
+
+    <!-- Torso inside the V -->
+    <path
+      d="M 180,174 C 180,165 220,165 220,174 L 226,220 C 226,226 174,226 174,220 Z"
+      fill="#DDD6FE"
+    />
+
+    <!-- Sound / Voice Waves radiating from head -->
+    <!-- Wave 1 (inner) -->
+    <path
+      d="M 244,114 C 253,124 253,140 244,150"
+      fill="none"
+      stroke="#FFFFFF"
+      stroke-width="9"
+      stroke-linecap="round"
+    />
+    <!-- Wave 2 (outer) -->
+    <path
+      d="M 262,98 C 278,114 278,150 262,166"
+      fill="none"
+      stroke="#FFFFFF"
+      stroke-width="9"
+      stroke-linecap="round"
+      stroke-opacity="0.85"
+    />
+
+    <!-- Right Wing Layer (Behind) -->
+    <path
+      d="M 200,296
+         C 230,296 265,260 286,220
+         C 298,198 290,175 272,175
+         C 255,175 240,192 230,210
+         C 220,230 205,255 190,265
+         Z"
+      fill="url(#vowaWingRightGrad)"
+    />
+
+    <!-- Main Protective Embracing V-Shape (Foreground) -->
+    <path
+      d="M 132,112
+         C 148,102 166,112 174,130
+         L 192,185
+         C 200,215 210,240 200,270
+         C 192,295 180,305 162,305
+         C 142,305 125,285 110,250
+         L 84,188
+         C 75,166 78,142 94,124
+         C 104,112 118,105 132,112
+         Z"
+      fill="url(#vowaWingGrad)"
+    />
+
+    <!-- Right Upward Hand/Wing of the V -->
+    <path
+      d="M 160,302
+         C 178,304 200,292 220,272
+         L 285,188
+         C 298,172 316,170 326,184
+         C 336,198 332,218 318,236
+         L 242,316
+         C 214,342 172,342 144,318
+         L 138,312
+         C 146,307 153,304 160,302
+         Z"
+      fill="url(#vowaWingGrad)"
+    />
+  </g>
+</svg>
